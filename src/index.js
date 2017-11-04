@@ -7,7 +7,7 @@ const Alexa = require("alexa-sdk"); // import the library
 
 //Replace with your app ID (OPTIONAL).  You can find this value at the top of your skill's page on http://developer.amazon.com.
 //Make sure to enclose your value in quotes, like this:  var APP_ID = "amzn1.ask.skill.bb4045e6-b3e8-4133-b650-72923c5980f1";
-var APP_ID = undefined;
+var APP_ID = "amzn1.ask.skill.aa2972b4-99b2-41de-9e61-666599eff483";
 
 // =====================================================================================================
 // --------------------------------- Section 1. Data and Text strings  ---------------------------------
@@ -29,13 +29,13 @@ var data=[
 //TODO: Replace these text strings to edit the welcome and help messages
 //======================================================================================================
 
-var skillName = "Alexa Team Lookup";
+var skillName = "InDA Team Lookup";
 
 //This is the welcome message for when a user starts the skill without a specific intent.
-var WELCOME_MESSAGE = "Welcome to " + skillName + "Learn about Alexa Evangelists and Solutions Architects. For example, " + getGenericHelpMessage(data);
+var WELCOME_MESSAGE = "Welcome to " + skillName + "Learn about InDA Team. For example, " + getGenericHelpMessage(data);
 
 //This is the message a user will hear when they ask Alexa for help in your skill.
-var HELP_MESSAGE = "I can help you find Alexa Evangelists and Solutions Architects. ";
+var HELP_MESSAGE = "I can help you find InDA Team. ";
 
 //This is the message a user will hear when they begin a new search
 var NEW_SEARCH_MESSAGE = getGenericHelpMessage(data);
@@ -48,7 +48,7 @@ var DESCRIPTION_STATE_HELP_MESSAGE = "Here are some things you can say: Tell me 
 var MULTIPLE_RESULTS_STATE_HELP_MESSAGE = "Sorry, please say the first and last name of the person you'd like to learn more about";
 
 // This is the message use when the decides to end the search
-var SHUTDOWN_MESSAGE = "Ok.";
+var SHUTDOWN_MESSAGE = "Ok. Shutting Down.";
 
 //This is the message a user will hear when they try to cancel or stop the skill.
 var EXIT_SKILL_MESSAGE = "Ok.";
